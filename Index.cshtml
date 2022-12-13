@@ -1,0 +1,10 @@
+﻿@model  IEnumerable<mvcsams66.Employee>
+
+@{
+    ViewBag.Title = "Index";
+    WebGrid GRID = new WebGrid(Model);
+}
+
+<h2>Index</h2>
+
+@GRID.GetHtml();
